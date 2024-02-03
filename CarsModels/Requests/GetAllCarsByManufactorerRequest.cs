@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CarsModels.Requests
+﻿namespace CarsModels.Requests
 {
-    internal class GetAllCarsByManufactorerRequest
+    public class GetAllCarsByManufactorerRequest
     {
+        public int ManufactorerID { get; set; }
+        public DateTime DateAfter { get; set; }
     }
 }
