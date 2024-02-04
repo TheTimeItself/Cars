@@ -1,3 +1,9 @@
+using CarsDL.Interfaces;
+using CarsDL.Repositories;
+using CarsBL.Services;
+using CarsBL.Interfaces;
+using CarsModels.Models;
+
 namespace Cars
 {
     public class Program
@@ -10,6 +16,14 @@ namespace Cars
             builder.Services.AddRazorPages();
 
             var app = builder.Build();
+
+            builder.Services.AddSingleton<ICarRepository, CarRepository>();
+
+            builder.Services.AddSingleton<ICarService, CarService>();
+
+            builder.Services.AddSingleton<IManufactorerRepository, ManufactorerRepository>();
+
+            builder.Services.AddSingleton<IManufactorerService, ManufactorerService>();
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())

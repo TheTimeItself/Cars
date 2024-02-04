@@ -15,22 +15,22 @@ namespace CarsBL.Services
 
         public void Add(Manufactorer manufactorer)
         {
-            throw new NotImplementedException();
+            _manufactorerService.Add(manufactorer);
         }
 
         public List<Manufactorer> GetAll()
         {
-            throw new NotImplementedException();
+            return _manufactorerService.GetAll();
         }
 
         public Manufactorer? GetByID(int id)
         {
-            throw new NotImplementedException();
+            return _manufactorerService.GetByID(id);
         }
 
         public void Remove(int id)
         {
-            throw new NotImplementedException();
+            _manufactorerService.Remove(id);
         }
     }
 }
