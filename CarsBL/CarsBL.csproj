@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\CarsDL\CarsDL.csproj" />
+    <ProjectReference Include="..\CarsModels\CarsModels.csproj" />
   </ItemGroup>
 
 </Project>

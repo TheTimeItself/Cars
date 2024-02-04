@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CarsModels.Models;
 
 namespace CarsModels.Responses
 {
-    internal class GetAllCarsByManufactorerRespose
+    public class GetAllCarsByManufactorerRespose
     {
+        public Manufactorer Manufactorer { get; set; }
+        public List<Car> Cars { get; set; }
     }
 }
