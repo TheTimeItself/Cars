@@ -38,7 +38,7 @@ namespace Cars.Controllers
             _carService.Remove(id);
         }
         [HttpGet("GetAll")]
-        public void GetAll(int id)
+        public void GetAll()
         {
             _carService.GetAll();
         }

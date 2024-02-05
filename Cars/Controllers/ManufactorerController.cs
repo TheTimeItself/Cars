@@ -40,7 +40,7 @@ namespace Cars.Controllers
         }
 
         [HttpGet("GetAll")]
-        public void GetAll(int id)
+        public void GetAll()
         {
             _manufactorerService.GetAll();
         }
