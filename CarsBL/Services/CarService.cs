@@ -23,11 +23,11 @@ namespace CarsBL.Services
             return _carRepository.GetAll();
         }
 
-        public List<Car> GetAllByManufactorerAfterCreation(int manufactorerId, DateTime afterDate)
+        public List<Car> GetAllByManufactorerAfterCreation(int manufacturerId, DateTime afterDate)
         {
-            var result = _carRepository.GetAllByManufactorer(manufactorerId);
+            var result = _carRepository.GetAllByManufactorer(manufacturerId);
 
-            return result.Where(b => b.ManufacturerId == manufactorerId).ToList();
+            return result.Where(b => b.ManufacturerId == manufacturerId).ToList();
         }
 
         public Car? GetByID(int id)

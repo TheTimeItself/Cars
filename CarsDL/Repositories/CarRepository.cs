@@ -1,6 +1,6 @@
-﻿using CarsModels.Models;
-using CarsDL.InMemoryDb;
+﻿using CarsDL.InMemoryDb;
 using CarsDL.Interfaces;
+using CarsModels.Models;
 
 namespace CarsDL.Repositories
 {
@@ -8,22 +8,22 @@ namespace CarsDL.Repositories
     {
         public void Add(Car car)
         {
-            InMemoryDb.InMemoryDb.Cars.Add(car);
+            StaticData.Cars.Add(car);
         }
 
         public List<Car> GetAll()
         {
-            return InMemoryDb.InMemoryDb.Cars;
+            return StaticData.Cars;
         }
 
         public List<Car> GetAllByManufactorer(int manufactorerId)
         {
-            return InMemoryDb.InMemoryDb.Cars.Where(c=> c.ManufacturerId == manufactorerId).ToList();
+            return StaticData.Cars.Where(c => c.ManufacturerId == manufactorerId).ToList();
         }
 
         public Car? GetByID(int id)
         {
-            return InMemoryDb.InMemoryDb.Cars.First(a => a.Id == id);
+            return StaticData.Cars.First(a => a.Id == id);
         }
 
         public void Remove(int id)
@@ -33,7 +33,7 @@ namespace CarsDL.Repositories
             {
                 return;
             }
-            InMemoryDb.InMemoryDb.Cars.Remove(car);
+            StaticData.Cars.Remove(car);
         }
     }
 }

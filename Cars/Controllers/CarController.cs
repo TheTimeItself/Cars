@@ -1,7 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using CarsDL.Interfaces;
-using CarsDL.Repositories;
-using CarsBL.Services;
 using CarsBL.Interfaces;
 using CarsModels.Models;
 

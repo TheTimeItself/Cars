@@ -2,7 +2,7 @@
 
 namespace CarsDL.InMemoryDb
 {
-    public static class InMemoryDb
+    public static class StaticData
     {
         public static List<Car> Cars = new List<Car>()
         {
@@ -39,19 +39,19 @@ namespace CarsDL.InMemoryDb
                 CreationDate = new DateTime(2010)
             },
         };
-        public static List<Manufactorer> Manufactorers = new List<Manufactorer>()
+        public static List<Manufacturer> Manufacturers = new List<Manufacturer>()
         {
-            new Manufactorer()
+            new Manufacturer()
             {
                 id = 1,
                 Name = "Mitsubishi"
             },
-            new Manufactorer()
+            new Manufacturer()
             {
                 id = 2,
                 Name = "Honda"
             },
-            new Manufactorer()
+            new Manufacturer()
             {
                 id = 3,
                 Name = "Subaru"
